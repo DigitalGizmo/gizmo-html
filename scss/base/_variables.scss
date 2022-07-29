@@ -35,20 +35,24 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $red: red;
+//////////
+$shark: #2d2f31;
+$new-blue: #8297c2;
+$lines: #343b59;
 
 // Font Colors
-$heading-font-color: $blue;
-$base-font-color: $blue;
-$subhead-font-color: $blue;
-$action-color: $blue;
+$heading-font-color: $new-blue;
+$base-font-color: $new-blue;
+$subhead-font-color: $new-blue;
+$action-color: $new-blue;
 
 // Border
-$base-border-color: $blue;
+$base-border-color: $new-blue;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
-$base-background-color: $white;
-$slim-background-color: $blue-white;
+$base-background-color: $shark;
+$slim-background-color: $new-blue;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
