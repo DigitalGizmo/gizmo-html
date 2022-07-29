@@ -1,0 +1,11 @@
+{% load static %}
+
+<div id="slimpop-wrapper">
+	<p class="slimpop-close"><a href='javascript:hideBox();'>close</a></p>
+
+	{% with "projects/_"|add:page|add:".html" as template %}
+	    {% include template %}
+	{% endwith %}
+	
+</div><!--slimpop-wrapper -->
+

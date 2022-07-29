@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>{% block title %}DigitalGizmo - {{ page }}{% endblock %}</title>
+	<meta name="description" content="DigitalGizmo designs and produces websites, specializing in humanities, cultural heritage and educational websites.">
+	<meta name="keywords" content="web development, web design, history, humanities, education, cultural heritage, how things work, visual explanations" url="http://www.digitalgizmo.com/">
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/gizmo-styles.css' %}" media="all">
+  
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+
+</head>
+<body>
+	<div id="slimpop-wrapper">
+    <p class="slimpop-close"><a href="{{ referring_path }}">
+      {% if referring_path == "/" %}Gizmo Home{% else %}back{% endif %}
+      </a>
+    </p>
+
+	{% with "projects/_"|add:page|add:".html" as template %}
+	    {% include template %}
+	{% endwith %}
+		
+	</div><!--slimpop-wrapper -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89026430-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>

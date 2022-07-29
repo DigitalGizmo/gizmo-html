@@ -1,0 +1,86 @@
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 300;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  font-style: normal;
+  font-weight: 400;
+  line-height: $heading-line-height;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: lighten($action-color, 25%);
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img, picture {
+  margin: 0;
+  max-width: 100%;
+  padding: 2px;
+  border: $base-border;
+}
+
+header h1 {
+  font-size: $super-large-font-size;
+  font-style: normal;
+  font-weight: 400;
+  color: $heading-font-color;
+  margin-bottom: 0;
+}
+
+#page h1 {
+  color: $heading-font-color;
+  font-size: $large-font-size;
+}
+
+#page h2 {
+  font-size: $med-large-font-size;
+}
+
+#page h2, #page h3, #page h4 {
+  color: $subhead-font-color;
+}
+
+h2.rule-head {
+  @include outer-container;
+  border-top: $base-border;
+  clear: both;
+  margin-top: $base-spacing;
+  padding: $tiny-spacing 0 $small-spacing 0;
+}
+
+ul.services-list {
+  list-style-type: disc;
+  margin-left: $small-spacing;
+}

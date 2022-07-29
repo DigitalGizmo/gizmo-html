@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/// Georgia font stack.
+///
+/// @type List
+
+$georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+
+/// Helvetica font stack.
+///
+/// @type List
+
+$helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+/// Lucida Grande font stack.
+///
+/// @type List
+
+$lucida-grande: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+
+/// Monospace font stack.
+///
+/// @type List
+
+$monospace: "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace;
+
+/// Verdana font stack.
+///
+/// @type List
+
+$verdana: "Verdana", "Geneva", sans-serif;
+
+
+/// TypeKit's Bodoni - added by Juliet, 9/2017
+
+$bodoni: 'bodoni-urw', serif;
+
+
+///  Google's Roboto and Roboto Condensed - added by Juliet, 9/2017
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+
+
+///  Google's Lato and Prata - added by Juliet, 9/2017
+$lato: 'Lato', sans-serif;
+$prata: 'Prata', serif;

@@ -1,0 +1,103 @@
+// Slim Pops
+
+#slimpop-wrapper {
+  background-color: $slim-background-color;
+  border: 1px solid $blue;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+  color: $blue;
+  font: $base-font-family;
+  overflow: auto;
+  padding: $base-spacing * 1.25;
+  
+  @media print {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.slim-border {
+  border: 1px solid $base-border-color;
+  overflow: auto;
+  padding: $base-spacing $small-spacing $base-spacing $small-spacing;
+
+  @media print {
+    border: none;
+  }
+}
+
+.slimpop-close {/* for the close link */
+  float: right;
+  a {
+    color: $blue;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+//for images in slims
+#slimpop-wrapper img {
+  border: $base-border;
+}
+
+.slim-title {
+  font: $heading-font-family;
+  font-size: $med-large-font-size * 1.25;
+}
+
+.slim-date {
+  font-weight: bold;
+  margin: -2em null 2em null;
+}
+
+.highlight {
+  margin-bottom: $base-spacing * 1.25;
+
+  h2 a {
+    color: $blue;
+    font-size: $base-font-size * 1.5;
+    margin: $tiny-spacing 0;
+  }
+}
+
+#slimpop-overlay {
+  background: url(../images/overlay.png) repeat;
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99;
+}
+
+/* JavaScript assigns this (or .hidden) to slimpop-container */
+.slimpop-basic {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed; /* this positions the slimpop relative to viewport, it won't scroll with the page */
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  @media print {
+    overflow: visible;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.project {/* this should resize for mobile unless the full page feature takes care of it  */
+  max-height: 85%;
+  width: 80%;
+}
+
+.hidden {
+  display: none; 
+}

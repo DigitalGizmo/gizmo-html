@@ -1,0 +1,82 @@
+// Home Page
+.home-anim, .logotype-anim {
+	position: relative;
+}
+
+.home-nav {
+	// if screen is less than 600px
+  @include media(max-width $medium-screen - 1px) {
+		position: absolute;
+		left: 45%;
+		top: 10%;
+	}
+
+	// if screen is greater than or equal to 600px
+  @include media($medium-screen) {
+		position: absolute;
+		left: 55%;
+		top: 20%;
+  }
+
+ 	li a {
+		color: $heading-font-color;
+		font-family: $heading-font-family; 
+		line-height: 2em;
+
+		// if screen is less than 600px
+  	@include media(max-width $medium-screen - 1px) {
+  		font-size: $large-font-size * .75;
+  	}
+
+		// if screen is greater than or equal to 600px
+  	@include media($medium-screen) {
+  		font-size: $large-font-size;
+			letter-spacing: 0.05em;
+  	}
+	}
+}
+
+table.title-block {
+	border: 3px solid #98A1BC;
+
+	// if screen is less than 600px
+	@include media(max-width $medium-screen - 1px) {
+		margin-left: 10%;
+		margin-top: 0;
+		width: 80%;
+	}
+
+	// if screen is greater than or equal to 600px but less than 1100px
+	@include media(min-width $medium-screen + 1px max-width $large-screen) {
+		margin-left: 10%;
+		margin-top: 0;
+		width: 80%;
+	}
+
+	// if screen is greater than or equal to 1100px
+	@include media($large-screen) {
+		position: absolute;
+		left: 55%;
+		top: 50%;
+		width: 40%;
+	}
+
+	td {
+		border: 1px solid #98A1BC;
+		padding: $small-spacing;		
+	}
+
+	h1, h2 {
+		font-family: $heading-font-family;	
+	}
+
+	h1 {
+		font-size: $med-large-font-size;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: $base-font-size * 1.5;
+	}
+}
+

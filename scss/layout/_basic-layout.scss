@@ -1,0 +1,129 @@
+// Basic Layout
+body {
+	background: $base-background-color;
+	min-height: 100vh;
+}
+
+#wrapper {
+	@include outer-container;
+	overflow: auto;
+}
+
+header {
+	@include outer-container;
+}
+
+#page {
+	@include outer-container;
+	padding: $base-spacing;
+}
+
+footer, header nav {
+	@include outer-container;
+	border-top: $base-border;
+	padding: $small-font-size $base-spacing;
+}
+
+footer, header nav {
+	ul li, ul li.last {
+		display: inline;
+		padding-right: $large-spacing;
+		border-right: $base-border;
+	}
+	
+	ul li.last {
+		border-right: none;
+	}
+
+	a {
+	}
+}
+
+footer ul {
+	// if screen is less than 600px
+  @include media(max-width $medium-screen - 1px) {
+  	float: left;
+	
+		li {
+			border-right: none;
+			display: block;
+			padding: $tiny-spacing 0;
+		}
+	}
+}
+
+// logo for mobile view
+img.mobile-logo {
+  border: none;
+  display: inline;
+  float: right;
+  padding-right: $base-spacing;
+  max-width: 25%;
+
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+
+.left-column {
+  @include span-columns(12);
+	margin-bottom: $base-spacing;
+
+  @include media($medium-screen) {
+  	@include span-columns(3);
+  }
+}
+
+.right-column {
+	@include span-columns(12);
+	margin-bottom: $large-spacing;
+
+  @include media($medium-screen) {
+    @include span-columns(9);
+		@include omega;
+	}
+}
+
+.projects-grid {
+	margin: $large-spacing 0;
+}
+
+.projects-grid-item {
+	// if screen is less than 600px, layout is 2 columns
+  @include media(max-width $medium-screen - 1px) {
+  	margin-bottom: $base-spacing;
+  	@include span-columns(6 of 12);  
+  	@include omega(2n);
+	}
+
+	// if screen is greater than or equal to 600px, layout is 3 columns
+  @include media($medium-screen) {
+  	margin-bottom: $large-spacing;
+    @include span-columns(4 12);
+    @include omega(3n);
+  }
+	
+	h3 {
+		// if screen is less than 900px, text is smaller
+	  @include media(max-width $large-screen) {
+	 		font-size: $med-large-font-size * .625;
+	 		height: 2.75em;
+			margin-bottom: $small-spacing;
+		}
+
+		// if screen is greater than or equal to 600px, text is larger
+		@include media($large-screen) {
+ 			font-size: $med-large-font-size;
+ 			height: 2.5em;
+			margin-bottom: $tiny-spacing;
+		}
+	}
+}
+
+img.pause-button {
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
