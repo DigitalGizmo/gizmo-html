@@ -160,7 +160,7 @@ function getURL(theURL, contentDiv) {
   // using .get instead of .load so that I can catch errors, especially 404
   // requestData,?
   $.get(theURL, function(data) {  
-    console.log(' -- data: ' + data)
+    // console.log(' -- data: ' + data)
     contentDiv.html(
       '<div id="slimpop-wrapper">' + 
       '<p class="slimpop-close"><a href="/">close</a></p>' +
