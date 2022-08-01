@@ -682,13 +682,13 @@ table.title-block h2 {
 }
 
 #slimpop-wrapper {
-  background-color: #F2F6FA;
-  border: 1px solid #283C66;
+  background-color: #ced4d9;
+  border: 1px solid #343b59;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
-  color: #283C66;
-  font: "Roboto", sans-serif;
+  color: #343b59;
+  font: "Hind", sans-serif;
   overflow: auto;
-  padding: 2em;
+  padding: 3em;
 }
 
 @media print {
@@ -700,7 +700,7 @@ table.title-block h2 {
 }
 
 .slim-border {
-  border: 1px solid #283C66;
+  border: 1px solid #343b59;
   overflow: auto;
   padding: 1.6em 0.8em 1.6em 0.8em;
 }
@@ -716,7 +716,7 @@ table.title-block h2 {
 }
 
 .slimpop-close a {
-  color: #283C66;
+  color: #343b59;
 }
 
 @media print {
@@ -726,12 +726,15 @@ table.title-block h2 {
 }
 
 #slimpop-wrapper img {
-  border: 1px solid #283C66;
+  border: 1px solid #343b59;
 }
 
 .slim-title {
   font-family: "Hind", sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  word-spacing: 0.015em;
 }
 
 .slim-date {
@@ -743,10 +746,14 @@ table.title-block h2 {
   margin-bottom: 2em;
 }
 
+.highlight h2 {
+  color: #343b59;
+  font-size: 1.25em;
+  margin: 0;
+}
+
 .highlight h2 a {
-  color: #283C66;
-  font-size: 1.35em;
-  margin: 0.4em 0;
+  color: #343b59;
 }
 
 #slimpop-overlay {
@@ -785,7 +792,7 @@ table.title-block h2 {
 .project {
   /* this should resize for mobile unless the full page feature takes care of it  */
   max-height: 85%;
-  width: 80%;
+  width: 60%;
 }
 
 .hidden {
