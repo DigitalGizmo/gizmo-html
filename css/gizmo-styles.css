@@ -36,7 +36,8 @@ body {
   font-family: 'Hind', sans-serif;
   font-size: 0.9em;
   font-weight: 300;
-  line-height: 1.6;  margin: 0;
+  line-height: 1.6;  
+  margin: 0;
   min-height: 100vh;
 }
 
@@ -413,6 +414,7 @@ footer ul li.last, header nav ul li.last {
     padding-right: 1.25em;
   }
 }
+
 img.mobile-logo {
   border: none;
   display: inline;
@@ -806,6 +808,12 @@ table.title-block h2 {
   /* this should resize for mobile unless the full page feature takes care of it  */
   max-height: 85%;
   width: 60%;
+}
+
+@media screen and (max-width: 599px) {
+  .project {
+    stroke-width: 2px;
+  }
 }
 
 .hidden {
