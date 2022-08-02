@@ -408,6 +408,11 @@ footer ul li.last, header nav ul li.last {
   }
 }
 
+@media screen and (max-width: 599px) {
+  header nav ul li {
+    padding-right: 1.25em;
+  }
+}
 img.mobile-logo {
   border: none;
   display: inline;
@@ -508,12 +513,12 @@ img.mobile-logo {
 }
 @media screen and (max-width: 1050px) {
   .projects-grid-item h3 {
-    font-size: 1.25em;
-    height: 2.75em;
+    font-size: 1em;
+    height: 3.75em;
     margin-bottom: 0.8em;
     width:  90%;
     text-transform: uppercase;
-    letter-spacing: 0.15em;  }
+    letter-spacing: 0.075em;  }
 }
 @media screen and (min-width: 1050px) {
   .projects-grid-item h3 {
@@ -540,8 +545,8 @@ img.pause-button:hover {
 @media screen and (max-width: 599px) {
   .home-nav {
     position: absolute;
-    left: 45%;
-    top: 5%;
+    left: 41%;
+    top: 15%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -574,10 +579,11 @@ img.pause-button:hover {
 table.title-block {
   border: 2px solid #414a71;
 }
+
 @media screen and (max-width: 599px) {
   table.title-block {
     margin-left: 10%;
-    margin-top: 0;
+    margin-top: -40px;
     width: 80%;
   }
 }
@@ -618,7 +624,8 @@ table.title-block h2 {
 }
 
 .stroke-5, .stroke1, .stroke2, .stroke3 {
-  stroke: #414a71;
+  /*stroke: #414a71;*/
+  stroke: #434e7e;
 }
 
 .stroke-5 {
@@ -629,7 +636,13 @@ table.title-block h2 {
   stroke-width: 1px;
 }
 
-.stroke2 {
+@media screen and (max-width: 599px) {
+  .stroke1 {
+    stroke-width: 2px;
+  }
+}
+
+  .stroke2 {
   stroke-width: 2px;
 }
 
