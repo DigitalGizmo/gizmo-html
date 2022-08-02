@@ -69,15 +69,15 @@ $(document).ready(function(){
     var chosen_href = $(event.target).closest('a').attr('href');
     console.log(" -- href: " + chosen_href);
     
-    if ($('footer ul').css('float') === 'left')  {
-      // console.log(" -- visible (aka mobile)");
-      // use href as-is for full
-      window.location.href = chosen_href;        
-    } else {
-      // console.log(" -- not visible (aka desktop) ");
+    // if ($('footer ul').css('float') === 'left')  {
+    //   // console.log(" -- visible (aka mobile)");
+    //   // use href as-is for full
+    //   window.location.href = chosen_href;        
+    // } else {
+    //   // console.log(" -- not visible (aka desktop) ");
 
-      slimPop(chosen_href, "project");  
-    }
+    slimPop(chosen_href, "project");  
+    // }
 
   });
 
