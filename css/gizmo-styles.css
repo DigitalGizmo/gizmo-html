@@ -705,7 +705,11 @@ table.title-block h2 {
   overflow: auto;
   padding: 3em;
 }
-
+@media screen and (max-width: 599px) {
+  #slimpop-wrapper {
+    padding: 1em;
+  }
+}
 @media print {
   #slimpop-wrapper {
     background-color: white;
@@ -812,7 +816,8 @@ table.title-block h2 {
 
 @media screen and (max-width: 599px) {
   .project {
-    stroke-width: 2px;
+    max-height: none;
+    width: 100%;
   }
 }
 
