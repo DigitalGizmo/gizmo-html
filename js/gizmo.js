@@ -69,27 +69,13 @@ $(document).ready(function(){
     var chosen_href = $(event.target).closest('a').attr('href');
     console.log(" -- href: " + chosen_href);
     
-    // e.g. /project/impressions
-    
-    // if ($('.projects-grid-item[1]').is(":nth-child(2n)"))  {
-      if ($('.mobile-logo').is(":visible"))  {
-        console.log(" -- visible (aka mobile)");
-        // use href as-is for full
-        window.location.href = chosen_href;        
-      } else {
-        console.log(" -- not visible (aka desktop) ");
-        
-        // split href and add ajax
-        // var href_split = chosen_href.split('/');    
-        // // href_split[1] = project, about, [2] = impressions, juliet
-        // var ajaxHref = "/" + href_split[1] + "/ajax/" + href_split[2];
-        // console.log(" -- ajaxHref: " + ajaxHref);
-        // var web_href = "https://dev.digitalgizmo.com/gizmo-assets/content/" + chosen_href;
-        // console.log(" -- web_href: " + web_href);
-        
-        // slimPop(chosen_href, slimpopSizeClass);  
-        // slimPop(ajaxHref, "project");  
-        // slimPop(chosen_href, "project");  
+    if ($('footer ul').css('float') === 'left')  {
+      // console.log(" -- visible (aka mobile)");
+      // use href as-is for full
+      window.location.href = chosen_href;        
+    } else {
+      // console.log(" -- not visible (aka desktop) ");
+
       slimPop(chosen_href, "project");  
     }
 
