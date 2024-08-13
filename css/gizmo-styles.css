@@ -319,7 +319,7 @@ header h1 {
   font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 #page h2 {
@@ -497,6 +497,8 @@ img.mobile-logo {
 
 .projects-grid-item a img {
   border-radius: 50%;
+  max-width: 100%;
+  aspect-ratio: 1/1;
 }
 
 @media screen and (max-width: 599px) {
@@ -587,12 +589,12 @@ img.pause-button:hover {
   .home-nav {
     position: absolute;
     left: 55%;
-    top: 7%;
+    top: 12%;
   }
 }
 
 .home-nav li a {
-  font-family: "Hind", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 0.2em;
@@ -646,7 +648,7 @@ table.title-block td {
 }
 
 table.title-block h1, table.title-block h2 {
-  font-family: "Hind", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 table.title-block h1 {
