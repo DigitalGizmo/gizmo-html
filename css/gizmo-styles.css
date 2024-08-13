@@ -552,15 +552,14 @@ img.mobile-logo {
     font-size: 1.75em;
     height: 3em;
     margin-bottom: 0.8em;
-    letter-spacing: 0.125em;  }
+    letter-spacing: 0.025em;  }
 }
 
 @media screen and (min-width: 1050px) {/*large*/
   .projects-grid-item h3 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     height: 2.5em;
     margin-bottom: 0.4em;
-/*    width: 90%;*/
   }
 }
 
@@ -791,12 +790,21 @@ table.title-block h2 {
   border: 1px solid #343b59;
 }
 
-.slim-title {
-  font-family: "Hind", sans-serif;
+#slimpop-wrapper div.diptych img {
+  width: 49%;
+  display: inline;
+}
+
+h1.slim-title {
+  margin-bottom: 0;
   font-size: 2em;
   letter-spacing: .05em;
   text-transform: uppercase;
   word-spacing: 0.015em;
+}
+
+h2.slim-title {
+  margin-top: 0;
 }
 
 .slim-date {
